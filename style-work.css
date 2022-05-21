@@ -1,0 +1,23 @@
+/*
+ Theme Name: justcoffee
+ Template: hello-elementor
+ 
+*/
+
+/* Mobilversion */
+
+.elementor-117 .elementor-element.elementor-element-f137619.elementor-wc-products ul.products li.product {
+  width: 240px;
+}
+
+/*  Tablet */
+@media (min-width: 1024px) {
+  .h2 {
+    line-height: 50px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+}
