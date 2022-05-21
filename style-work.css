@@ -71,14 +71,31 @@
 }
 
 #shop_kategorier ul {
-  grid-template-columns: repeat(5, fit-content(100%));
+  grid-template-columns: repeat(3, fit-content(100%));
   justify-content: space-evenly;
 }
 
+#shop .page-numbers li {
+  width: 30px;
+  margin: 3px;
+}
+
+#shop .page-numbers li span,
+#shop .page-numbers li a:hover {
+  border-radius: 50%;
+  width: 30px;
+}
+
 /*  Tablet */
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .h2 {
     line-height: 60px;
+  }
+
+  /* ------ SHOP ------ */
+  #shop_kategorier ul {
+    grid-template-columns: repeat(5, fit-content(100%));
+    justify-content: space-evenly;
   }
 }
 
