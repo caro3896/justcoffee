@@ -86,8 +86,21 @@
   width: 30px;
 }
 
+#shop .orderby {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  font-family: var(--e-global-typography-secondary-font-family);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--e-global-color-primary);
+  margin-bottom: 20px;
+  margin-top: -30px;
+  padding: 0;
+}
+
 /*  Tablet */
-@media (min-width: 1023px) {
+@media (min-width: 768px) {
   .h2 {
     line-height: 60px;
   }
@@ -96,6 +109,11 @@
   #shop_kategorier ul {
     grid-template-columns: repeat(5, fit-content(100%));
     justify-content: space-evenly;
+  }
+
+  #shop .orderby {
+    text-align: right;
+    padding: auto;
   }
 }
 
