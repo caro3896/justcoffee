@@ -4,16 +4,81 @@
  
 */
 
-/* Mobilversion */
+/* Scroll på nyheds og kaffe sektioner */
 
-.elementor-117 .elementor-element.elementor-element-f137619.elementor-wc-products ul.products li.product {
+.scoll {
+  overflow-x: scroll;
+}
+
+#kaffe_sektion li {
   width: 240px;
+}
+#nyhed_sektion article {
+  width: 350px;
+}
+
+.elementor-1531 .elementor-element.elementor-element-6f5ac53.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated {
+  margin-bottom: 15px;
+}
+
+#nyhed_sektion .elementor-button span {
+  color: var(--e-global-color-cd12463);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+  height: 10px;
+}
+
+/* - Track */
+::-webkit-scrollbar-track:horizontal {
+  box-shadow: inset 0 0 5px var(--e-global-color-primary);
+  border-radius: 10px;
+}
+
+.bryggeguides_nyhed ::-webkit-scrollbar-track:horizontal {
+  box-shadow: inset 0 0 5px var(--e-global-color-accent);
+}
+
+/* - Handle */
+::-webkit-scrollbar-thumb:horizontal {
+  background: var(--e-global-color-primary);
+  border-radius: 10px;
+}
+
+.bryggeguides_nyhed ::-webkit-scrollbar-thumb:horizontal {
+  background: var(--e-global-color-accent);
+  border-radius: 10px;
+}
+
+#nyhed_sektion #nyhed_dato span {
+  color: var(--e-global-color-accent);
+}
+
+#nyhed_sektion .bryggeguides_nyhed #nyhed_dato span {
+  color: var(--e-global-color-secondary);
+}
+
+#nyhed_sektion span:hover {
+  color: var(--e-global-color-accent);
+}
+
+/* ------ SHOP ------ */
+#shop_kategorier li img,
+#shop_kategorier li .count {
+  display: none;
+}
+
+#shop_kategorier ul {
+  grid-template-columns: repeat(5, fit-content(100%));
+  justify-content: space-evenly;
 }
 
 /*  Tablet */
 @media (min-width: 1024px) {
   .h2 {
-    line-height: 50px;
+    line-height: 60px;
   }
 }
 
