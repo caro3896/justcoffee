@@ -86,7 +86,7 @@
   width: 30px;
 }
 
-#shop .orderby {
+/* #shop .orderby {
   background-color: transparent;
   border: none;
   text-align: left;
@@ -97,6 +97,81 @@
   margin-bottom: 20px;
   margin-top: -30px;
   padding: 0;
+} */
+
+/* ----  SINGLE PRODUKT ----- */
+#kaffe_information .woocommerce-product-attributes-item--weight {
+  display: none;
+}
+
+/* Label-felt (f.eks. smagsnoter) */
+/* #kaffe_information .woocommerce-product-attributes-item__label::before {
+  content: url("http://carolinejuhl.dk/kea/17_afsluttende_projekt/justcoffee/wp-content/uploads/2022/05/Group-613-1.svg");
+  display: flex;
+  width: auto;
+  align-items: center;
+} */
+
+.enkel_information tr {
+  display: grid;
+  text-align: left;
+}
+.enkel_information th,
+.enkel_information td,
+.enkel_information table {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+#ristningsgrad .woocommerce-product-attributes-item--weight,
+#ristningsgrad .woocommerce-product-attributes-item--attribute_pa_bonnesort,
+#ristningsgrad .woocommerce-product-attributes-item--attribute_pa_forarbejdning,
+#ristningsgrad .woocommerce-product-attributes-item--attribute_pa_smagsnoter,
+#ristningsgrad .woocommerce-product-attributes-item--attribute_pa_hojde,
+#smagsnoter .woocommerce-product-attributes-item--weight,
+#smagsnoter .woocommerce-product-attributes-item--attribute_pa_bonnesort,
+#smagsnoter .woocommerce-product-attributes-item--attribute_pa_forarbejdning,
+#smagsnoter .woocommerce-product-attributes-item--attribute_pa_ristningsgrad,
+#smagsnoter .woocommerce-product-attributes-item--attribute_pa_hojde,
+#hojde .woocommerce-product-attributes-item--weight,
+#hojde .woocommerce-product-attributes-item--attribute_pa_bonnesort,
+#hojde .woocommerce-product-attributes-item--attribute_pa_forarbejdning,
+#hojde .woocommerce-product-attributes-item--attribute_pa_ristningsgrad,
+#hojde .woocommerce-product-attributes-item--attribute_pa_smagsnoter,
+#forarbejdning .woocommerce-product-attributes-item--weight,
+#forarbejdning .woocommerce-product-attributes-item--attribute_pa_bonnesort,
+#forarbejdning .woocommerce-product-attributes-item--attribute_pa_smagsnoter,
+#forarbejdning .woocommerce-product-attributes-item--attribute_pa_ristningsgrad,
+#forarbejdning .woocommerce-product-attributes-item--attribute_pa_hojde,
+#bonnesort .woocommerce-product-attributes-item--weight,
+#bonnesort .woocommerce-product-attributes-item--attribute_pa_forarbejdning,
+#bonnesort .woocommerce-product-attributes-item--attribute_pa_smagsnoter,
+#bonnesort .woocommerce-product-attributes-item--attribute_pa_ristningsgrad,
+#bonnesort .woocommerce-product-attributes-item--attribute_pa_hojde {
+  display: none;
+}
+
+#maengde th,
+#maengde td {
+  padding: 0 6px;
+  background: transparent;
+  text-align: left;
+}
+
+#maengde a.reset_variations {
+  visibility: hidden !important;
+}
+
+#kaffe_produkt .price {
+  color: var(--e-global-color-accent);
+  font-family: var(--e-global-typography-secondary-font-family);
+  text-decoration: uppercase;
+  font-weight: bold;
+}
+
+#kaffe_produkt .woocommerce-variation-price {
+  margin-bottom: 20px;
 }
 
 /*  Tablet */
@@ -108,13 +183,14 @@
   /* ------ SHOP ------ */
   #shop_kategorier ul {
     grid-template-columns: repeat(5, fit-content(100%));
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    column-gap: 50px;
   }
 
-  #shop .orderby {
+  /* #shop .orderby {
     text-align: right;
     padding: auto;
-  }
+  } */
 }
 
 /* Desktop */
