@@ -166,7 +166,7 @@
 #kaffe_produkt .price {
   color: var(--e-global-color-accent);
   font-family: var(--e-global-typography-secondary-font-family);
-  text-decoration: uppercase;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -191,6 +191,42 @@
     text-align: right;
     padding: auto;
   } */
+}
+
+/* ---- EVENT SINGLEVIEW ---- */
+#event_beskrivelse li {
+  text-align: left;
+  max-width: 100%;
+}
+
+#event_beskrivelse img {
+  display: none;
+}
+
+#event_beskrivelse .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+  visibility: hidden !important;
+  position: relative;
+}
+
+#event_beskrivelse .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link::after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "Find din billet her";
+  background: var(--e-global-color-accent);
+  padding: 7px;
+  text-transform: uppercase;
+  border: 2.5px solid var(--e-global-color-accent);
+  color: var(--e-global-color-secondary);
+  font-family: var(--e-global-typography-secondary-font-family);
+  font-size: 15px;
+  width: max-content;
+}
+
+#event_beskrivelse .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:hover::after {
+  background: var(--e-global-color-secondary);
+  color: var(--e-global-color-accent);
 }
 
 /* Desktop */
