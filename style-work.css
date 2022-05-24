@@ -270,6 +270,37 @@
   font-weight: var(--e-global-typography-9031e86-font-weight);
 }
 
+/* Kurv */
+.woocommerce a.button.alt {
+  background-color: var(--e-global-color-accent) !important;
+  border: 2px solid var(--e-global-color-accent);
+  color: var(--e-global-color-secondary) !important;
+  text-transform: uppercase;
+}
+.woocommerce a.button.alt:hover {
+  background-color: var(--e-global-color-secondary) !important;
+  border: 2px solid var(--e-global-color-accent);
+  color: var(--e-global-color-accent) !important;
+  text-transform: uppercase;
+}
+
+#coupon_code {
+  width: 200px !important;
+}
+
+#respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+  border-radius: 0 !important;
+  color: var(--e-global-color-secondary) !important;
+  background-color: var(--e-global-color-accent) !important;
+  border: 2px solid var(--e-global-color-accent) !important;
+}
+
+ #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover  {
+  background-color: var(--e-global-color-secondary) !important;
+  border: 2px solid var(--e-global-color-accent);
+  color: var(--e-global-color-accent) !important
+}
+
 /*  Tablet */
 @media (min-width: 768px) {
   .h2 {
