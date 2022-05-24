@@ -124,6 +124,17 @@
   padding: 0 !important;
 }
 
+.enkel_information th {
+  font-weight: 500 !important;
+}
+
+.enkel_information td {
+  font-size: 15px !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  pointer-events: none !important;
+}
+
 #ristningsgrad .woocommerce-product-attributes-item--weight,
 #ristningsgrad .woocommerce-product-attributes-item--attribute_pa_bonnesort,
 #ristningsgrad .woocommerce-product-attributes-item--attribute_pa_forarbejdning,
@@ -152,14 +163,18 @@
   display: none;
 }
 
-#maengde th,
-#maengde td {
+#hojde p::after {
+  content: " masl";
+}
+
+.maengde th,
+.maengde td {
   padding: 0 6px;
-  background: transparent;
+  background: transparent !important;
   text-align: left;
 }
 
-#maengde a.reset_variations {
+.maengde a.reset_variations {
   visibility: hidden !important;
 }
 
@@ -174,23 +189,8 @@
   margin-bottom: 20px;
 }
 
-/*  Tablet */
-@media (min-width: 768px) {
-  .h2 {
-    line-height: 60px;
-  }
-
-  /* ------ SHOP ------ */
-  #shop_kategorier ul {
-    grid-template-columns: repeat(5, fit-content(100%));
-    justify-content: flex-start;
-    column-gap: 50px;
-  }
-
-  /* #shop .orderby {
-    text-align: right;
-    padding: auto;
-  } */
+#mere_om_farmen a {
+  text-decoration: underline;
 }
 
 /* ---- EVENT SINGLEVIEW ---- */
@@ -227,6 +227,66 @@
 #event_beskrivelse .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:hover::after {
   background: var(--e-global-color-secondary);
   color: var(--e-global-color-accent);
+}
+
+/* ---- KOOPERATIVER ----- */
+#kooperativer_akiv .elementor-post__read-more {
+  background: var(--e-global-color-accent);
+  padding: 5px;
+  border: 2.5px solid var(--e-global-color-accent);
+}
+
+#kooperativer_akiv .elementor-post__read-more:hover {
+  background: var(--e-global-color-secondary);
+  color: var(--e-global-color-accent);
+}
+
+#info_kooperativ #prøv_kaffen li {
+  max-width: 100%;
+  text-align: left;
+}
+
+#info_kooperativ #prøv_kaffen .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+  background: var(--e-global-color-accent);
+  padding: 7px;
+  text-transform: uppercase;
+  border: 2.5px solid var(--e-global-color-accent);
+  border-radius: 0;
+  color: var(--e-global-color-secondary);
+  font-family: var(--e-global-typography-secondary-font-family);
+  font-size: 15px;
+  width: max-content;
+}
+
+#info_kooperativ #prøv_kaffen .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:hover {
+  background: var(--e-global-color-secondary);
+  color: var(--e-global-color-accent);
+}
+
+#info_kooperativ #prøv_kaffen .wc-block-grid__product-title {
+  color: var(--e-global-color-accent);
+  font-family: var(--e-global-typography-9031e86-font-family), Sans-serif;
+  font-size: var(--e-global-typography-9031e86-font-size);
+  font-weight: var(--e-global-typography-9031e86-font-weight);
+}
+
+/*  Tablet */
+@media (min-width: 768px) {
+  .h2 {
+    line-height: 60px;
+  }
+
+  /* ------ SHOP ------ */
+  #shop_kategorier ul {
+    grid-template-columns: repeat(5, fit-content(100%));
+    justify-content: flex-start;
+    column-gap: 50px;
+  }
+
+  /* #shop .orderby {
+    text-align: right;
+    padding: auto;
+  } */
 }
 
 /* Desktop */
