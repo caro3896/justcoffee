@@ -301,6 +301,28 @@
   color: var(--e-global-color-accent) !important
 }
 
+#customer_details h1,
+#customer_details h2,
+#customer_details h3,
+#customer_details h4,
+#order_review_heading {
+  font-family: var(--e-global-typography-bad6a31-font-family);
+  text-transform: uppercase;
+  color: var(--e-global-color-primary);
+}
+
+#order_review table, #payment {
+font-family: var(--e-global-typography-secondary-font-family) !important;
+border-collapse: collapse;
+}
+
+#order_review tr:not(.cart_item),
+#order_review tfoot {
+  text-transform: uppercase;
+  color: var(--e-global-color-primary);
+
+}
+
 /*  Tablet */
 @media (min-width: 768px) {
   .h2 {
