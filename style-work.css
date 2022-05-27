@@ -6,23 +6,19 @@
 
 /* Scroll på nyheds og kaffe sektioner */
 
-.scoll {
-  overflow-x: scroll;
+.scroll {  
+  overflow-x: scroll !important;
 }
 
-#kaffe_sektion li {
-  width: 240px;
+.kaffe_sektion li {
+  width: 240px !important;
 }
-#nyhed_sektion article {
-  width: 350px;
+.nyhed_sektion article {
+  width: 350px !important;
 }
 
 .elementor-1531 .elementor-element.elementor-element-6f5ac53.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated {
   margin-bottom: 15px;
-}
-
-#nyhed_sektion .elementor-button span {
-  color: var(--e-global-color-cd12463);
 }
 
 /* Scrollbar */
@@ -52,15 +48,15 @@
   border-radius: 10px;
 }
 
-#nyhed_sektion #nyhed_dato span {
+.nyhed_sektion #nyhed_dato span {
   color: var(--e-global-color-accent);
 }
 
-#nyhed_sektion .bryggeguides_nyhed #nyhed_dato span {
+.nyhed_sektion .bryggeguides_nyhed #nyhed_dato span {
   color: var(--e-global-color-secondary);
 }
 
-#nyhed_sektion span:hover {
+.nyhed_sektion span:hover {
   color: var(--e-global-color-accent);
 }
 
@@ -68,11 +64,6 @@
 #shop_kategorier li img,
 #shop_kategorier li .count {
   display: none;
-}
-
-#shop_kategorier ul {
-  grid-template-columns: repeat(3, fit-content(100%));
-  justify-content: space-evenly;
 }
 
 #shop .page-numbers li {
@@ -86,18 +77,18 @@
   width: 30px;
 }
 
-/* #shop .orderby {
+#shop .orderby {
   background-color: transparent;
   border: none;
   text-align: left;
   font-family: var(--e-global-typography-secondary-font-family);
   text-transform: uppercase;
+  font-size: 13px;
   font-weight: bold;
   color: var(--e-global-color-primary);
-  margin-bottom: 20px;
-  margin-top: -30px;
   padding: 0;
-} */
+  padding-left: 6px;
+}
 
 /* ----  SINGLE PRODUKT ----- */
 #kaffe_information .woocommerce-product-attributes-item--weight {
@@ -132,7 +123,11 @@
   font-size: 15px !important;
   font-style: normal !important;
   font-weight: bold !important;
-  pointer-events: none !important;
+  /* pointer-events: none !important; */
+}
+
+.enkel_information td a:hover {
+  color: var(--e-global-color-accent) !important;
 }
 
 #ristningsgrad .woocommerce-product-attributes-item--weight,
@@ -191,6 +186,11 @@
 
 #mere_om_farmen a {
   text-decoration: underline;
+}
+
+#mere_om_farmen a:hover {
+ color: var(--e-global-color-secondary
+ );
 }
 
 /* ---- EVENT SINGLEVIEW ---- */
@@ -323,6 +323,10 @@ border-collapse: collapse;
 
 }
 
+.elementor-menu-cart__toggle_button {
+  border: none !important;
+}
+
 /*  Tablet */
 @media (min-width: 768px) {
   .h2 {
@@ -336,13 +340,30 @@ border-collapse: collapse;
     column-gap: 50px;
   }
 
-  /* #shop .orderby {
+#shop .orderby {
     text-align: right;
     padding: auto;
-  } */
+    font-size: 15px;
+  } 
 }
 
 /* Desktop */
 
 @media (min-width: 1024px) {
+  #mere_om_farmen a {
+    background: var(--e-global-color-accent);
+    padding: 19px 39px 19px 39px;
+    color: var(--e-global-color-secondary);
+    border: 2px solid var(--e-global-color-accent);
+    font-family: var(--e-global-typography-secondary-font-family);
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 4;
+    text-decoration: none;
+}
+
+#mere_om_farmen a:hover {
+  background: var(--e-global-color-secondary);
+  color: var(--e-global-color-accent);
+}
 }
