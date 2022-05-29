@@ -254,12 +254,14 @@ font-weight: 400;
   color: var(--e-global-color-accent);
 }
 
-#info_kooperativ #prøv_kaffen li {
-  max-width: 100%;
+#info_kooperativ #prøv_kaffen li,
+.nyhed_køb .wp-block-handpicked-products li{
+  max-width: 100% !important;
   text-align: left;
 }
 
-#info_kooperativ #prøv_kaffen .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+#info_kooperativ #prøv_kaffen .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link,
+.nyhed_køb .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
   background: var(--e-global-color-accent);
   padding: 7px;
   text-transform: uppercase;
@@ -271,12 +273,14 @@ font-weight: 400;
   width: max-content;
 }
 
-#info_kooperativ #prøv_kaffen .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:hover {
+#info_kooperativ #prøv_kaffen .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:hover,
+.nyhed_køb .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:hover {
   background: var(--e-global-color-secondary);
   color: var(--e-global-color-accent);
 }
 
-#info_kooperativ #prøv_kaffen .wc-block-grid__product-title {
+#info_kooperativ #prøv_kaffen .wc-block-grid__product-title,
+.nyhed_køb .wc-block-grid__product-title {
   color: var(--e-global-color-accent);
   font-family: var(--e-global-typography-9031e86-font-family), Sans-serif;
   font-size: var(--e-global-typography-9031e86-font-size);
