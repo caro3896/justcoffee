@@ -13,9 +13,15 @@
 .kaffe_sektion li {
   width: 240px !important;
 }
-.nyhed_sektion article {
-  width: 350px !important;
+.nyhed_sektion .scroll article {
+  width: 280px !important;
 }
+
+/* .nyhed_sektion article img {
+  width: 250px !important;
+  height: 200px;
+  object-fit: cover;
+} */
 
 .elementor-1531 .elementor-element.elementor-element-6f5ac53.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated {
   margin-bottom: 15px;
@@ -345,6 +351,10 @@ border-collapse: collapse;
     padding: auto;
     font-size: 15px;
   } 
+
+  .nyhed_sektion .scroll article {
+    width: 350px !important;
+  }
 }
 
 /* Desktop */
