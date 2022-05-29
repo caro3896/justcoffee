@@ -4,6 +4,13 @@
  
 */
 
+/* Burger menu mobil */
+
+#mobil_menu .elementor-sub-item {
+color: var(--e-global-color-primary);
+font-weight: 400;
+}
+
 /* Scroll på nyheds og kaffe sektioner */
 
 .scroll {  
